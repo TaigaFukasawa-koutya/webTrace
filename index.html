@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>トレース練習用サンプルサイト</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Courgette&family=M+PLUS+1p:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="drawer drawer--right">
+
+  <div class="triangle-top-left"></div>
+  <div class="triangle-top-right"></div>
+  <div class="photo-img"></div>
+
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#">INDEX</a></li>
+        <li><a class="drawer-menu-item" href="#">Information</a></li>
+        <li><a class="drawer-menu-item" href="#">Portfolio</a></li>
+        <li><a class="drawer-menu-item" href="#">Contact</a></li>
+      </ul>
+      <p class ="logo-nav">
+        <img src="images/logo.png" alt="Logo Image">
+      </p>
+    </nav>
+  </header>
+
+  <main role="main">
+  
+    <article>
+      <h2 class="title">What's new</h2>
+      <p class="notice">
+        最近の制作実績を紹介しています。なお、これまでの制作実績はポートフォリオページに掲載していますので、ご確認いただけると嬉しいです。
+      </p>
+
+      <section class="entry">
+        <h3 class="date">
+          <p class="year">2020</p>
+          <p class ="month-day">01</p>
+          <p class="month-day">28</p>
+        </h3>
+        <p class="device-img">
+          <img src="images/img_001.png" alt="Device Image">
+        </p>
+        <p class="device-text">
+          プログラミングが苦手な人のためのスライダー講座【Swiper編】で使用されるサンプルWEBデザインを担当しました。サンプルではあるものの、レスポンシブWEBデザインでコーディングし、ハンバーガーメニューはDrawerを使用しました。
+          <br>
+          Swiperは非常にカスタマイズ性に優れているので、様々なスライダーをデザインできます。また、JavaScriptなどのプログラミングが苦手な方でも、比較的簡単に実装できるのもおすすめのポイントだといえます。カスタマイズの際には、SwiperのオプションをいじるだけなのでJavaScriptの知識はほぼ必要なく、実際のところCSSの知識の方が重要でした！
+        </p>
+        <p class="device-img">
+          <img src="images/img_002.png" alt="Device Image">
+        </p>
+        <p class="device-img">
+          <img src="images/img_003.png" alt="Device Image">
+        </p>
+      </section>
+    </article>
+
+    <aside>
+      <div class="index-box">
+        <h3 class="index-title">index</h3>
+          <ul class="index-menu">
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+        <h3 class="index-title">About me</h3>
+        <p>WEBデザイナーとして活動中。これまでの実績はポートフォリオページに掲載。お仕事のご依頼はコンタクトページよりお願い致します。</p>
+
+        <h3 class="index-title">atention</h3>
+        <p>こちらのWEBサイトは動画講座で使用するサンプルサイトであることを、予めご了承ください。</p>
+    </div>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p class="logo">
+      <img src="images/logo.png" alt="LOGO Image">
+    </p>
+
+    <ul class="footer-menu">
+      <li><a href="#">Information</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <p class ="copyright">
+      &copy; Taiga
+    </p>
+  </footer>
+
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <script>$(document).ready(function() {
+      $('.drawer').drawer();
+    });</script>
+</body>
+</html>

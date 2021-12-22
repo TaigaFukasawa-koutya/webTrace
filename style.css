@@ -1,0 +1,328 @@
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  
+body {
+  color: #333333;
+  font-family: -apple-system , BlinkMacSystemFont , 'Helvetica Neue' , '游ゴシック' , 'Yu Gothic' , '游ゴシック体' , YuGothic , Verdana , 'メイリオ' , Meiryo , sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.triangle-top-left {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35vw 46vw 0 0;
+  border-color: #3b4358 transparent transparent transparent;
+  z-index: 9999;
+}
+
+.triangle-top-right {
+  z-index: 10000;
+  position:absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 26vw 0;
+  border-color: transparent #d0826f transparent transparent;
+}
+
+.photo-img {
+  position: absolute;
+  z-index: 10001;
+  width: 21vw;
+  height: 21vw;
+  background-image: url("images/ladymodel.jpg");
+  background-size: cover;
+  border-radius:50%;
+  border: 6px solid #ffffff;
+  top: 10vw;
+  left: 4vw;
+}
+
+main{
+  display:flex;
+  flex-direction: row-reverse;
+}
+
+article{
+  width:70vw;
+  padding-top:23vw;
+  padding-left:5vw;
+  padding-right: 5vw;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+h2.title{
+  font-size: 3.6vw;
+  color: #d0826f;
+  font-family: 'Courgette',cursive;
+}
+
+p.notice{
+  font-size: 1.6vw;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+p.device-img{
+  max-width: 860px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+p.device-img img{
+  width: 100%;
+}
+
+p.device-text{
+  font-size: 1.6vw;
+  line-height: 1.7;
+  padding: 0 0 10px;
+}
+
+section.entry{
+  margin-bottom:120px;
+}
+
+h3.date{
+  background-color: #3b4358;
+  color: #ffffff;
+  width: 10vw;
+  padding: 2.4vw .8vw;
+  position:relative;
+  margin: 3vw 0 -14vw 3vw;
+}
+
+h3.date p{
+  text-align: center;
+}
+
+p.year{
+  font-size:1.2vw;
+}
+
+p.month-day{
+  font-size: 4.0vw;
+  margin: -2vw 0 0 0;
+}
+
+aside {
+  width: 30vw;
+  background-color:#e0e0e0;
+}
+
+.index-box{
+  position: relative;
+  top: 40vw;
+  left: 4vw;
+  width: 22vw;
+  letter-spacing: 0.2rem;
+}
+
+.index-box p{
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5vw;
+  line-height: 1.5;
+}
+
+.index-title{
+  font-family: 'Roboto Slab',serif;
+  font-size: 1.6vw;
+  margin-top: 3vw;
+  text-transform: uppercase;
+}
+
+.index-menu{
+  list-style-type: circle;
+  list-style-position: outside;
+  padding: 0 0 0 2.0rem;
+  font-size: 1.6rem;
+}
+
+a:link,
+a:visited {
+  color: #d0826f
+}
+
+footer{
+  background-color: #3b4358;
+  color: #ffffff;
+  padding: 8vw 0 3vw 0;
+}
+
+.logo{
+  margin: 0 auto;
+  max-width: 15vw;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-menu li {
+  border: 1px solid #ffffff;
+  padding: 8px 0;
+  width: 20vw;
+  text-align: center;
+  margin: 10px 3px;
+  font-size: 1.6vw;
+}
+
+.copyright{
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size:1.4vw;
+  letter-spacing: .2rem;
+}
+
+header{
+  display: none;
+}
+
+@media (max-width: 599px) {
+ 
+  main {
+      flex-direction: column;
+  }
+ 
+  article {
+    width: 100vw;
+    padding-top: 35vw;
+  }
+ 
+  section.entry {
+    margin-bottom: 0;
+  }
+  
+  aside {
+    width: 100vw;
+    background-color: #fafafa;
+  }
+ 
+  .index-box {
+    top: 0;
+    left: 0;
+    width: 90vw;
+    margin: 0 auto 10vw;
+  }
+ 
+  h3.index-title:first-child,
+  ul.index-menu {
+    display: none;
+  }
+ 
+  h2.title {
+    font-size: 5vw;
+  }
+ 
+  p.notice {
+    font-size: 3.4vw;
+    margin-bottom: 30px;
+  }
+ 
+  p.device-text {
+    font-size: 3.4vw;
+    padding: 0 0 30px;
+  }
+ 
+  .index-title {
+    font-size: 3.4vw;
+    margin-top: 5vw;
+  }
+ 
+  .index-box p {
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+ 
+  h3.date {
+    padding: 3vw .7vw;
+  }
+ 
+  p.month-day {
+    margin: -1vw 0 0;
+  }
+ 
+  .photo-img {
+    border: 3px solid #ffffff;
+  }
+
+  header{
+    display: block;
+    position: absolute;
+    z-index: 20000;
+  }
+
+  .drawer-nav {
+    background-color: rgba(52, 61, 81, 0.9);
+    font-family: 'Roboto Slab',serif;
+    letter-spacing: .2rem;
+  }
+
+  .drawer-brand {
+    margin-top: 40px;
+  }
+
+  a.drawer-brand{
+    margin-left: 10px;
+  }
+
+  a.drawer-brand:link,
+  a.drawer-brand:visited {
+    color: #ffffff;
+    font-size: 1.6rem;
+  }
+
+  a.drawer-menu-item:link,
+  a.drawer-menu-item:visited{
+    font-size: 1.4rem;
+  }
+
+  .drawer-menu li:first-child{
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .drawer-menu li {
+    border-bottom: 1px dashed #ffffff;
+    padding: 0.3rem;
+  }
+  
+  .drawer-menu-item::before{
+    font-family: 'Material Icons' ;
+    content: "chevron_right";
+    font-size: 1.6rem;
+    color: #ffffff;
+    vertical-align: bottom;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .logo-nav{
+    width: 100px;
+    margin: 30px auto 0;
+  }
+
+  .logo-nav img{
+    width: 100%;
+  }
+
+  .drawer-hamburger {
+    width: 2.8rem;
+  }
+}
